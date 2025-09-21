@@ -13,21 +13,25 @@
         "format:check": "prettier --check src",
         "lint:format": "npm run lint:fix && npm run format",
         "check": "npm run lint && npm run format:check",
-        "build": "tsc"
+        "build": "tsc",
+        "prepare": "husky"
     },
     "devDependencies": {
         "@tsconfig/node22": "^22.0.2",
         "@types/node": "^22.15.0",
-        "nodemon": "^3.1.10",
-        "tsx": "^4.20.5",
-        "typescript": "^5.9.2",
-        "eslint": "^9.35.0",
+        "@typescript-eslint/eslint-plugin": "^8.44.0",
+        "@typescript-eslint/parser": "^8.44.0",
+        "eslint": "^9.36.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-define-config": "^2.1.0",
         "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-security": "^3.0.1",
+        "husky": "^9.1.7",
+        "nodemon": "^3.1.10",
         "prettier": "^3.6.2",
+        "tsx": "^4.20.5",
+        "typescript": "^5.9.2",
         "typescript-eslint": "^8.44.0"
     },
     "repository": {
