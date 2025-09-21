@@ -15,6 +15,7 @@
         "format:check": "prettier --check src",
         "lint:format": "npm run lint:fix && npm run format",
         "check": "npm run lint && npm run format:check",
+        "lint-staged": "lint-staged",
         "build": "tsc",
         "prepare": "husky"
     },
@@ -32,6 +33,7 @@
         "eslint-plugin-security": "^3.0.1",
         "eslint-plugin-vitest": "^0.5.4",
         "husky": "^9.1.7",
+        "lint-staged": "^16.1.6",
         "nodemon": "^3.1.10",
         "prettier": "^3.6.2",
         "tsx": "^4.20.5",
@@ -48,5 +50,14 @@
     "bugs": {
         "url": "https://github.com/matthyy/base-node-typescript-project/issues"
     },
-    "homepage": "https://github.com/matthyy/base-node-typescript-project#readme"
+    "homepage": "https://github.com/matthyy/base-node-typescript-project#readme",
+    "lint-staged": {
+        "*.{ts,js}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md}": [
+            "prettier --write"
+        ]
+    }
 }
