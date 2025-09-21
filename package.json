@@ -2,6 +2,7 @@
   "name": "base-node-typescript-project",
   "version": "1.0.0",
   "description": "Initial setup for a node.js typescript project",
+  "type": "module",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
