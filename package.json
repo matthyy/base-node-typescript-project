@@ -1,29 +1,43 @@
 {
-  "name": "base-node-typescript-project",
-  "version": "1.0.0",
-  "description": "Initial setup for a node.js typescript project",
-  "type": "module",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec tsx src/index.ts",
-    "build": "tsc"
-  },
-  "devDependencies": {
-    "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.15.0",
-    "nodemon": "^3.1.10",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matthyy/base-node-typescript-project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matthyy/base-node-typescript-project/issues"
-  },
-  "homepage": "https://github.com/matthyy/base-node-typescript-project#readme"
+    "name": "base-node-typescript-project",
+    "version": "1.0.0",
+    "description": "Initial setup for a node.js typescript project",
+    "type": "module",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --exec tsx src/index.ts",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix",
+        "format": "prettier --write src",
+        "format:check": "prettier --check src",
+        "lint:format": "npm run lint:fix && npm run format",
+        "check": "npm run lint && npm run format:check",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@tsconfig/node22": "^22.0.2",
+        "@types/node": "^22.15.0",
+        "nodemon": "^3.1.10",
+        "tsx": "^4.20.5",
+        "typescript": "^5.9.2",
+        "eslint": "^9.35.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-define-config": "^2.1.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-security": "^3.0.1",
+        "prettier": "^3.6.2",
+        "typescript-eslint": "^8.44.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matthyy/base-node-typescript-project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/matthyy/base-node-typescript-project/issues"
+    },
+    "homepage": "https://github.com/matthyy/base-node-typescript-project#readme"
 }
