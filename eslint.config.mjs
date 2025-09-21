@@ -3,6 +3,7 @@ import { defineConfig } from "eslint-define-config";
 
 import security from "eslint-plugin-security";
 import importPlugin from "eslint-plugin-import";
+import vitest from "eslint-plugin-vitest";
 import prettier from "eslint-config-prettier";
 
 export default defineConfig([
@@ -50,6 +51,20 @@ export default defineConfig([
         },
       ],
       "security/detect-object-injection": "warn",
+    },
+  },
+  {
+    files: ["**/*.test.ts", "**/*.spec.ts"],
+    plugins: {
+      vitest,
+    },
+    rules: {
+      ...vitest.configs.recommended.rules,
+    },
+    languageOptions: {
+      globals: {
+        ...vitest.environments.env.globals,
+      },
     },
   },
   prettier,
