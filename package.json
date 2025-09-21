@@ -1,0 +1,19 @@
+{
+  "name": "base-node-typescript-project",
+  "version": "1.0.0",
+  "description": "Initial setup for a node.js typescript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthyy/base-node-typescript-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthyy/base-node-typescript-project/issues"
+  },
+  "homepage": "https://github.com/matthyy/base-node-typescript-project#readme"
+}
